@@ -12,7 +12,6 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 public class CarDealer {
     private final int TIME_TO_SALE_CAR = 10;
     private final int CAPACITY_OF_GARAGE = 10;
-    private final Manager manager = new Manager(this);
     private final List<Car> garageDealer = new ArrayList<>(CAPACITY_OF_GARAGE);
     private static int buyerCounter;
     private final Lock lock = new ReentrantLock();
